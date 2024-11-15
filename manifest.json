@@ -1,33 +1,33 @@
 {
-    "manifest_version": 3,
-    "name": "IP Display Extension",
-    "version": "1.0",
-    "description": "Displays the IP address of the current webpage.",
-    "permissions": ["scripting", "activeTab"],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "icon16.png",
-        "48": "icon48.png",
-        "128": "icon128.png"
-      }
-    },
-    "icons": {
+  "manifest_version": 3,
+  "name": "网站位置定位精灵",
+  "version": "1.0",
+  "description": "自动查询并显示当前网站服务器IP归属地，实时了解网站服务器所在位置。支持全球地理位置查询，让您轻松掌握网站服务器的物理位置信息。",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
       "16": "icon16.png",
       "48": "icon48.png",
       "128": "icon128.png"
-    },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"]
-      }
-    ],
-    "host_permissions": [
-      "<all_urls>"
-    ]
-  }
-  
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

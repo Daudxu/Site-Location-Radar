@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景圆 -->
+    <circle cx="64" cy="64" r="60" fill="url(#gradient)" />
+    
+    <!-- 地球经纬线 -->
+    <path d="M64 4C41.9 4 23.2 17.5 14.6 36.9" stroke="rgba(255,255,255,0.6)" stroke-width="2" fill="none"/>
+    <path d="M113.4 36.9C104.8 17.5 86.1 4 64 4" stroke="rgba(255,255,255,0.6)" stroke-width="2" fill="none"/>
+    <path d="M14.6 91.1C23.2 110.5 41.9 124 64 124" stroke="rgba(255,255,255,0.6)" stroke-width="2" fill="none"/>
+    <path d="M64 124C86.1 124 104.8 110.5 113.4 91.1" stroke="rgba(255,255,255,0.6)" stroke-width="2" fill="none"/>
+    
+    <!-- 定位标记 -->
+    <path d="M64 30C52.95 30 44 38.95 44 50C44 65 64 85 64 85C64 85 84 65 84 50C84 38.95 75.05 30 64 30ZM64 56C60.7 56 58 53.3 58 50C58 46.7 60.7 44 64 44C67.3 44 70 46.7 70 50C70 53.3 67.3 56 64 56Z" fill="white"/>
+    
+    <!-- IP文字 -->
+    <text x="50" y="110" font-family="Arial" font-weight="bold" font-size="24" fill="white">IP</text>
+    
+    <!-- 渐变定义 -->
+    <defs>
+        <linearGradient id="gradient" x1="0" y1="0" x2="128" y2="128">
+            <stop offset="0%" style="stop-color:#4CAF50"/>
+            <stop offset="100%" style="stop-color:#2196F3"/>
+        </linearGradient>
+    </defs>
+</svg>
